@@ -27,7 +27,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        settings.frontend_url,
+        "https://tempolearn.vercel.app",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
     ],
@@ -35,7 +35,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Include routers
 app.include_router(auth.router)
 app.include_router(courses.router)
