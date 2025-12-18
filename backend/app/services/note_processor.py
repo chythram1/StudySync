@@ -3,7 +3,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from typing import List, Optional
 from datetime import datetime
 import json
-import fitz  # PyMuPDF
+from pypdf import PdfReader
+import io
 import re
 
 
@@ -135,11 +136,10 @@ class NoteProcessor:
 
 
 def extract_text_from_pdf(file_bytes: bytes) -> str:
-    doc = fitz.open(stream=file_bytes, filetype="pdf")
+    reader = PdfReader(io.BytesIO(file_bytes))
     text = ""
-    for page in doc:
-        text += page.get_text()
-    doc.close()
+    for page in reader.pages:
+        text += page.extract_text() or ""
     return text
 
 
