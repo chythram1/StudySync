@@ -30,7 +30,7 @@ export default function HomePage() {
             <div className="w-8 h-8 bg-ink-900 rounded-lg flex items-center justify-center">
               <BookOpen className="w-4 h-4 text-parchment-50" />
             </div>
-            <span className="font-display text-xl text-ink-900">StudySync</span>
+            <span className="font-display text-xl text-ink-900">TempoLearn</span>
           </div>
           
           <div className="flex items-center gap-4">
@@ -68,7 +68,7 @@ export default function HomePage() {
           </h1>
           
           <p className="text-xl text-ink-600 leading-relaxed mb-10 max-w-2xl">
-            Upload your lecture notes and let AI transform them into organized summaries, 
+            Upload your lecture notes and class syllabuses and let AI transform them into organized summaries, 
             flashcards, and calendar events. Study smarter, not harder.
           </p>
           
@@ -137,7 +137,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-3 gap-12">
           <StepCard 
             number="01"
-            title="Upload your notes"
+            title="Upload your materials"
             description="Drop in PDFs, text files, or paste your notes directly. We handle messy handwriting and lecture transcripts."
           />
           <StepCard 
@@ -182,7 +182,7 @@ export default function HomePage() {
               <div className="w-6 h-6 bg-ink-900 rounded flex items-center justify-center">
                 <BookOpen className="w-3 h-3 text-parchment-50" />
               </div>
-              <span className="font-display text-ink-900">StudySync</span>
+              <span className="font-display text-ink-900">TempoLearn</span>
             </div>
             <p className="text-ink-500 text-sm">
               Open source on GitHub
