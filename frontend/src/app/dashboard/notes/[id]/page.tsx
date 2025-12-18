@@ -322,10 +322,10 @@ export default function NoteDetailPage() {
 
 function StatusBadge({ status }: { status: string }) {
   const config = {
-    completed: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-100', label: 'Completed' },
+    completed: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-100', label: 'Completed', animate: false },
     processing: { icon: Loader2, color: 'text-amber-600', bg: 'bg-amber-100', label: 'Processing', animate: true },
-    failed: { icon: AlertCircle, color: 'text-red-600', bg: 'bg-red-100', label: 'Failed' },
-    pending: { icon: Clock, color: 'text-ink-400', bg: 'bg-parchment-100', label: 'Pending' }
+    failed: { icon: AlertCircle, color: 'text-red-600', bg: 'bg-red-100', label: 'Failed', animate: false },
+    pending: { icon: Clock, color: 'text-ink-400', bg: 'bg-parchment-100', label: 'Pending', animate: false }
   };
 
   const cfg = config[status as keyof typeof config] || config.pending;
