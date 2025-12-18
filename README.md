@@ -1,8 +1,6 @@
-# 📚 StudySync
+# 📚 TempoLearn
 
 **AI-powered study assistant that transforms lecture notes into exam-ready study materials.**
-
-![StudySync Demo](./docs/demo-preview.png)
 
 ## ✨ Features
 
@@ -44,8 +42,8 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/studysync.git
-cd studysync
+git clone https://github.com/yourusername/tempolearn.git
+cd tempolearn
 ```
 
 ### 2. Set up the backend
@@ -123,7 +121,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 ## 📁 Project Structure
 
 ```
-studysync/
+tempolearn/
 ├── backend/
 │   ├── app/
 │   │   ├── routers/          # API endpoints
